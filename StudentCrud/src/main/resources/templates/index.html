@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<div class="container">
+  <div class="row">
+  	<div>
+  	<h1>Student Marks Calculation</h1>
+  	</div>
+  	
+  	<form th:action="@{result}"th:object="${student}"method="post">
+  	 <div>
+    	<label>Student Name</label>
+    	 <input type="text" class="form-control" id="stname">
+    </div>
+   
+    <div>
+    <label>Marks1</label>
+    <input type="text" class="form-control" id="m1" name="m1">
+  </div>
+   <div>
+    <label>Marks2</label>
+    <input type="text" class="form-control" id="m2" name="m2">
+  </div>
+  <div>
+    <label>Marks3</label>
+    <input type="text" class="form-control" id="m3"name="m3">
+  </div>
+  
+  <br>
+  <div>
+   <input type="submit" value="submit"/>
+  </div>
+ 
+</form>
+
+
+</body>
+</html>
